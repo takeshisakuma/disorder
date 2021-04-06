@@ -28,6 +28,7 @@
     "format:ts": "eslint src/ts/**/*.ts --fix",
     "lint:js": "eslint src/js/**/*.js",
     "format:js": "eslint src/js/**/*.js --fix",
+    "format:all": "run-p format:scss format:ts",
     "min:css": "cleancss -o dist/css/style.css dist/css/style.css",
     "min:js": "uglifyjs dist/js/main.js -o dist/js/main.js",
     "delete:map": "rimraf dist/**/*.map",
