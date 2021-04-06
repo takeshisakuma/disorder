@@ -11,7 +11,6 @@
     "compile:scss2css": "sass src/scss/style.scss:dist/css/style.css --style=expanded --source-map-urls=relative",
     "compile:scss2cssprefix": "run-s compile:scss2css compile:css2cssprefix",
     "watch:scss2cssprefix": "chokidar \"src/scss/\" --command \"npm run compile:scss2cssprefix\" --initial",
-    "watch:ts": "tsc --rootDir src/ts --outDir dist/js -w",
     "watch:img": "chokidar \"src/img/**/*\" --command \"node imagemin.js\" --initial",
     "delete:dist": "rimraf dist",
     "copy:sitemapxml": "cpx \"src/sitemap.xml\" dist/",
@@ -21,7 +20,6 @@
     "copy:faviconico": "cpx \"src/favicon.ico\" dist/",
     "copy:apple-touch-iconpng": "cpx \"src/apple-touch-icon.png\" dist/",
     "prewatch:all": "run-s delete:dist copy:sitemapxml copy:robotstxt copy:humanstxt copy:manifestjson copy:faviconico copy:apple-touch-iconpng",
-    "watch:all": "run-p watch:pug2html watch:scss2cssprefix watch:ts watch:img start:server",
     "lint:scss": "stylelint \"**/*.scss\"",
     "format:scss": "stylelint --fix \"**/*.scss\"",
     "lint:ts": "eslint src/ts/**/*.ts",
@@ -35,7 +33,7 @@
     "prepare:all": "run-p min:js min:css delete:map",
     "build:ts": "webpack --mode production",
     "pack:ts": "webpack  --mode development --watch",
-    "watch:all2": "run-p watch:pug2html watch:scss2cssprefix pack:ts watch:img start:server"
+    "watch:all": "run-p watch:pug2html watch:scss2cssprefix pack:ts watch:img start:server"
   },
   "repository": {
     "type": "git",
@@ -54,7 +52,7 @@
     "@typescript-eslint/parser": "^4.21.0",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.24.7",
     "chokidar-cli": "^2.1.0",
     "clean-css-cli": "^5.2.2",
     "cpx": "^1.5.0",
@@ -87,5 +85,9 @@
     "uglify-es": "^3.3.9",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^2.6.12"
   }
 }
