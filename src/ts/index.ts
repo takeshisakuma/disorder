@@ -23,4 +23,4 @@ console.log("typescript_deee compiled");
 //外部ライブラリ動作確認
 axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
   console.log(res);
-})
+});
