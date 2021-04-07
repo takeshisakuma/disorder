@@ -26,6 +26,12 @@ $ npm run watch:all
 $ npm run format:all
 ```
 
+### テスト(Jest)
+
+```
+$ npm run test
+```
+
 ### 公開前不要ファイル削除
 
 ```
