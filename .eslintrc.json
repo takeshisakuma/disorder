@@ -5,16 +5,16 @@
     "prettier"
   ],
   "parserOptions":  {
-    "ecmaVersion":  2018,
+    "ecmaVersion":  2020,
     "sourceType":  "module"
   },
   "env": {
     "browser": true,
-     "node": true,
-      "amd": true
+    "jest": true
   },
   "root": true,
   "rules": {
-    "quotes": ["error", "double"] //クォーテーションがシングルのときエラー
+    "quotes": ["error", "double"], //クォーテーションがシングルのときエラー
+    "indent": ["error", 2]
   }
 }
