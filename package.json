@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "test": "jest",
-    "watch:pug2html": "pug src/pug/ --hierarchy -o dist/ -w -P",
+    "compile:pug": "pug src/pug/ --hierarchy -o dist/ -P",
+    "watch:pug": "pug src/pug/ --hierarchy -o dist/ -w -P",
     "start:server": "browser-sync start -s dist -w src/*.html src/css/*.css src/js/*.js",
     "compile:css2cssprefix": "postcss dist/css/style.css -u autoprefixer -o dist/css/style.css",
     "compile:scss2css": "sass src/scss/style.scss:dist/css/style.css --style=expanded --source-map-urls=relative",
@@ -24,16 +25,14 @@
     "format:scss": "stylelint --fix \"**/*.scss\"",
     "lint:ts": "eslint src/ts/**/*.ts",
     "format:ts": "eslint src/ts/**/*.ts --fix",
-    "lint:js": "eslint src/js/**/*.js",
-    "format:js": "eslint src/js/**/*.js --fix",
     "format:all": "run-p format:scss format:ts",
     "min:css": "cleancss -o dist/css/style.css dist/css/style.css",
     "min:js": "uglifyjs dist/js/main.js -o dist/js/main.js",
     "delete:map": "rimraf dist/**/*.map",
     "prepare:all": "run-p min:js min:css delete:map",
-    "build:ts": "webpack --mode production",
-    "pack:ts": "webpack  --mode development --watch",
-    "watch:all": "run-p watch:pug2html watch:scss2cssprefix pack:ts watch:img start:server"
+    "compile:ts": "webpack --mode production",
+    "watch:ts": "webpack  --mode development --watch",
+    "watch:all": "run-p watch:pug watch:scss2cssprefix watch:ts watch:img start:server"
   },
   "repository": {
     "type": "git",

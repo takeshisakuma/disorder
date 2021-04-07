@@ -1,1 +1,1 @@
-export const bbb: string = "import success";
+export const importTest: string = "sub.tsからのimport成功";

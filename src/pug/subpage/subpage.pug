@@ -1,13 +1,16 @@
+- var pagetitle="サブページ"
+- var pagedescription="サブページです。"
+
 doctype html
-html(lang='en')
-  head
+html(lang='ja')
+  include ../_include/_head.pug
     link(rel="stylesheet" href="/css/style.css")
     script(src="/js/main.js" defer)
 
   body
     header
     main
-      include ../../_include/_included.pug
-      p This is Pug oriented page.
-      a(href="/index.html") goto Toppage
+      p Pugから生成されたページです。
+      a(href="/index.html") トップページへ
+      include ../_include/_included.pug
     footer

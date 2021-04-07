@@ -18,17 +18,15 @@
 
 /* Component ------------ */
 
-//@import "object/component/*";
+@use "object/component/_avatar";
+@use "object/component/_button";
 
 /* Project ------------ */
 
-//@import "object/project/*";
+@use "object/project/_articles";
+@use "object/project/_comments";
 
 /* Utility ------------ */
 
-//@import "object/utility/*";
-
-body {
-  background-color: base.$backgroundColor;
-  color: red;
-}
+@use "object/utility/_align";
+@use "object/utility/_margin";

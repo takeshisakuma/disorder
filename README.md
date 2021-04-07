@@ -38,4 +38,6 @@ $ npm run test
 $ npm run prepare:all
 ```
 
+### 公開
+
 dist 配下のファイルをそのままアップロード
