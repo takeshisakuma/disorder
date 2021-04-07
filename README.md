@@ -1,8 +1,8 @@
 # myboilerplate2021
 
--   Pug、Sass(Dart-Sass)、TypeScript のコンパイル
--   JavaScript のバンドル
--   Babel でトランスパイル
+- Pug、Sass(Dart-Sass)、TypeScript のコンパイル
+- JavaScript のバンドル
+-
 
 ## 準備
 
@@ -14,19 +14,19 @@ $ npm ci
 
 ## 使用
 
-### Web 制作時
+### 制作時
 
 ```
 $ npm run watch:all
 ```
 
-### コード整形時
+### コード整形
 
 ```
 $ npm run format:all
 ```
 
-### 公開前
+### 公開前不要ファイル削除
 
 ```
 $ npm run prepare:all
