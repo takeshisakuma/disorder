@@ -1,7 +1,12 @@
+//Polyfill
+import "core-js";
+
+//async awaitを使う場合
+//import  regeneratorRuntime  from  "regenerator-runtime" ;
+
 //外部ライブラリインポート確認
 import axios from "axios";
 
-import "core-js";
 
 
 //外部TSファイルからのインポート確認
