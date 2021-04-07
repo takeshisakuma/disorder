@@ -12,6 +12,14 @@
     "indentation": 4,
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": "never-multi-line",
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "use"
+        ]
+      }
+    ]
   }
 }

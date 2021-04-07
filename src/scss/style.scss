@@ -2,14 +2,16 @@
 * Foundation
 * ========================== */
 
-@import "foundation/_reset";
-@import "foundation/_base";
+@use "foundation/_reset";
+@use "foundation/_base" as base;
 
 /**
 * Layout
 * ========================== */
 
-//@import "layout/*";
+@use "layout/_header";
+@use "layout/_footer";
+@use "layout/_main";
 
 /* Object
 * ========================== */
@@ -25,3 +27,8 @@
 /* Utility ------------ */
 
 //@import "object/utility/*";
+
+body {
+    background-color: base.$backgroundColor;
+    color: red;
+}
