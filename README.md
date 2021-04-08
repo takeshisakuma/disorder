@@ -16,8 +16,6 @@ $ npm ci
 $ npx simple-git-hooks
 ```
 
-## データ
-
 ## 使用
 
 ### 制作時
@@ -25,6 +23,8 @@ $ npx simple-git-hooks
 ```
 $ npm run watch:all
 ```
+
+/src/配下の Pug、SCSS、TypeScript のファイルを編集します。
 
 ### コード整形
 
