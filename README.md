@@ -49,3 +49,7 @@ $ npm run prepare:all
 ## アップロード
 
 dist 配下のファイルをそのままアップロード
+
+## Qiita
+
+https://qiita.com/takeshisakuma/items/5c6b0ff729f2c010e1b2
