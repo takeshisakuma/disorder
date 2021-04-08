@@ -4,12 +4,14 @@
 doctype html
 html(lang='ja')
   include ../_include/_head.pug
-    link(rel="stylesheet" href="/css/style.css")
-    script(src="/js/main.js" defer)
 
   body
     include ../_include/_header.pug
-    main
-      p Pugから生成されたページです。
-      a(href="/index.html") トップページ
+    main.main
+      .content
+        h1.heading1 ページタイトル
+        p Pugから生成されたページです。
+        a(href="/index.html") トップページ
     include ../_include/_footer.pug
+    //defer非対応ブラウザの場合
+    //script(src="/js/main.js")

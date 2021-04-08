@@ -7,9 +7,11 @@ html(lang='ja')
 
   body
     include _include/_header.pug
-    main
-      p Pugから生成されたページです。
-      a(href="/subpage/subpage.html") サブページへ
+    main.main
+      .content
+        h1.heading1 ページタイトル
+        p Pugから生成されたページです。
+        a(href="/subpage/subpage.html") サブページへ
     include _include/_footer.pug
     //defer非対応ブラウザの場合
     //script(src="/js/main.js")
