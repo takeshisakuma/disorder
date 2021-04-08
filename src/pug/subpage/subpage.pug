@@ -8,9 +8,8 @@ html(lang='ja')
     script(src="/js/main.js" defer)
 
   body
-    header
+    include ../_include/_header.pug
     main
       p Pugから生成されたページです。
-      a(href="/index.html") トップページへ
-      include ../_include/_included.pug
-    footer
+      a(href="/index.html") トップページ
+    include ../_include/_footer.pug

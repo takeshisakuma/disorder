@@ -10,6 +10,7 @@
 $ git clone https://github.com/takeshisakuma/myboilerplate2021.git
 $ cd myboilerplate2021
 $ npm ci
+$ npx simple-git-hooks
 ```
 
 ## 使用
