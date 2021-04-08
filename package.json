@@ -1,8 +1,8 @@
 {
-  "name": "myboilerplate2021",
+  "name": "disorder",
   "version": "1.0.0",
   "description": "",
-  "main": "",
+  "main": "index.ts",
   "scripts": {
     "test": "jest",
     "compile:pug": "pug src/pug/ --hierarchy -o dist/ -P",
@@ -63,7 +63,6 @@
     "imagemin-svgo": "^7.1.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
-    "node-sass-globbing": "^0.0.23",
     "npm": "^7.8.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.9",
