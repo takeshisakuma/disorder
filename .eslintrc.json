@@ -10,13 +10,12 @@
   },
   "env": {
     "browser": true,
-"node":true,
-
+    "node":true,
     "jest": true
   },
   "root": true,
   "rules": {
-    "quotes": ["error", "double"], //クォーテーションがシングルのときエラー
+    "quotes": ["error", "double"],
     "indent": ["error", 2]
   }
 }

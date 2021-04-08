@@ -33,12 +33,12 @@ $ npm run format:all
 $ npm run test
 ```
 
-### 公開前不要ファイル削除
+### 公開
+
+公開前不要ファイル削除、minify
 
 ```
 $ npm run prepare:all
 ```
-
-### 公開
 
 dist 配下のファイルをそのままアップロード

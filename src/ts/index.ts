@@ -1,7 +1,7 @@
 //Polyfill
 import "core-js";
 
-//async awaitを使う場合
+//Can't resolve 'regenerator-runtime/runtime'が表示されたとき(async awaitを使う場合など)
 //import  regeneratorRuntime  from  "regenerator-runtime" ;
 
 //外部ライブラリインポート確認
