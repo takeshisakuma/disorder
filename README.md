@@ -1,17 +1,22 @@
-# myboilerplate2021
+# disOrder
+
+Web 制作用のボイラープレート
 
 - Pug、Sass(Dart-Sass)、TypeScript のコンパイル
 - JavaScript のバンドル
--
+- Jest
+- CSS、JavaScript のコード整形
 
 ## 準備
 
 ```
-$ git clone https://github.com/takeshisakuma/myboilerplate2021.git
-$ cd myboilerplate2021
+$ git clone https://github.com/takeshisakuma/disorder
+$ cd disorder
 $ npm ci
 $ npx simple-git-hooks
 ```
+
+## データ
 
 ## 使用
 
@@ -33,12 +38,14 @@ $ npm run format:all
 $ npm run test
 ```
 
-### 公開
+## 公開
 
-公開前不要ファイル削除、minify
+## 不要ファイル削除、minify
 
 ```
 $ npm run prepare:all
 ```
+
+## アップロード
 
 dist 配下のファイルをそのままアップロード
